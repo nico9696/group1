@@ -1,8 +1,12 @@
 class Fraction(object):
 
     def __init__(self, numerator=0, denominator=1):
-        #TODO
-        pass
+        if isinstance(numerator, str):
+            for i in numerator:
+                if numerator[i] == "-":
+                    temp_numeraotr = "-"
+                elif numerator[i] in "1234567890":
+                    continue
 
     def gcd(a, b):
         #TODO
